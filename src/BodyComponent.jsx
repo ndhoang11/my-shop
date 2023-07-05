@@ -3,32 +3,55 @@ import React from 'react'
 const BodyComponent = () => {
     const products = [
         {
-            image: 'A',
-            name: 'Iphone 15',
-            price: 0,
-            discount: 20,
-            star: 4,
+            image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+            name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+            price: '28.000.000',
+            oldPrice: '35.000.000',
             favorite: true,
             produce: 'Korea'
         },
         {
-            image: 'b',
-            name: 'Iphone 13',
-            price: 0,
-            discount: 20,
-            star: 4,
-            favorite: false,
-            produce: 'Korea'
-        },
-        {
-            image: 'c',
-            name: 'Iphone 16',
-            price: 0,
-            discount: 20,
-            star: 4,
-            favorite: true,
-            produce: 'Korea'
-        }
+          image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+          name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+          price: '28.000.000',
+          oldPrice: '35.000.000',
+          favorite: true,
+          produce: 'Korea'
+      },
+      {
+        image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+        name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+        price: '28.000.000',
+        oldPrice: '35.000.000',
+        favorite: true,
+        produce: 'Korea'
+    },
+    {
+      image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+      name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+      price: '28.000.000',
+      oldPrice: '35.000.000',
+      favorite: true,
+      produce: 'Korea'
+  },
+  {
+    image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+    name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+    price: '28.000.000',
+    oldPrice: '35.000.000',
+    favorite: true,
+    produce: 'Korea'
+},
+{
+  image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+  name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+  price: '28.000.000',
+  oldPrice: '35.000.000',
+  favorite: true,
+  produce: 'Korea'
+},
+        
+        
     ]
   return (
     <div>
@@ -474,15 +497,16 @@ const BodyComponent = () => {
                     </div>
                     <div className="row sm-gutter">
                     {
-                        products.map((product) => <div className="col l-2-4 m-3 c-6 ">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-14-pro-max-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg)'}} />
+                        products.map((product) => 
+                        <div className="col l-2-4 m-3 c-6 ">
+                        <a className="home-product-item" href="/">
+                          <div className="home-product-item__img">{product.image}</div>
                           <h4 className="home-product-item__name">
                             {product.name}
                           </h4>
                           <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">{product.price}d</span>
+                            <span className="home-product-item__price-old">{product.oldPrice}</span>
+                            <span className="home-product-item__price-curent">{product.price}đ</span>
                           </div>
                           <div className="home-product-item__action">
                             <span className="home-product-item__like">
@@ -498,7 +522,7 @@ const BodyComponent = () => {
                             </div>
                           </div>
                           <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
+                            <span className="home-product-item__brand">{product.produce}</span>
                             <span className="home-product-item__origin-name">{product.produce}</span>
                           </div>
                           <div className="home-product-item__favourite">
@@ -506,374 +530,13 @@ const BodyComponent = () => {
                             <span>Favourite</span>
                           </div>
                           <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
+                            <span className="home-product-item__sale-off-persent">{product.discount}</span>
                             <span className="home-product-item__sale-off-label">Discount</span>
                           </div>
                         </a>  
                       </div>)
-                    }
-                      {/* product item */}
-                      <div className="col l-2-4 m-3 c-6 ">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-14-pro-max-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 14 Pro Max 128GB Chính hãng (VN/A)
-                          </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-14-pro-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-128gb-didongviet_1.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 14 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-14-pro-max-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 14 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/may-cu-gia-re/iphone-12-128gb-likenew.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-12-64gb-didongviet.jpeg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 12 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-14-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-14-128gb-didongviet_1.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 14 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-13-128gb.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-256gb-didongviet_1.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 13 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-11-128gb-chinh-hang-1.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/products/2023/4/9/1/1683605592281_thumb_iphone_11_didongviet.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 13 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/may-cu-gia-re/iphone-13-pro-max-256gb-likenew.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-256gb-vang-didongviet_1.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 13 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/may-cu-gia-re/iphone-11-pro-max-256gb-cu.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/products/2023/4/3/1/1683098581924_thumb_iphone_11_pro_max_gold_didongviet.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 13 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
-                      <div className="col l-2-4 m-3 c-6">
-                        <a className="home-product-item" href="https://didongviet.vn/dien-thoai/iphone-11-128gb-chinh-hang-1.html">
-                          <div className="home-product-item__img" style={{backgroundImage: 'url(https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-12-64gb-mau-tim-didongviet.jpg)'}} />
-                          <h4 className="home-product-item__name">
-                            iPhone 12 Pro 128GB Chính hãng (VN/A)                  </h4>
-                          <div className="home-product-item__price">
-                            <span className="home-product-item__price-old">1.200.000đ</span>
-                            <span className="home-product-item__price-curent">999.000đ</span>
-                          </div>
-                          <div className="home-product-item__action">
-                            <span className="home-product-item__like">
-                              <i className="fa-solid fa-heart" />
-                              {/* <i class="fa-solid fa-heart"></i> */}
-                            </span>
-                            <div className="home-product-item__rating">
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                              <i className="fa-sharp fa-solid fa-star" />
-                            </div>
-                          </div>
-                          <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">U stora</span>
-                            <span className="home-product-item__origin-name">korea</span>
-                          </div>
-                          <div className="home-product-item__favourite">
-                            <i className="fa-solid fa-check" />
-                            <span>Favourite</span>
-                          </div>
-                          <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">10%</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
-                          </div>
-                        </a>  
-                      </div>
+                    }           
+                      
                     </div>
                   </div>
                   <ul className="pagination home-product__pagination">
