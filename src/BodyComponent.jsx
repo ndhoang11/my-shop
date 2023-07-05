@@ -3,7 +3,7 @@ import React from 'react'
 const BodyComponent = () => {
     const products = [
         {
-            image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+            image:  'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
             name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
             price: '28.000.000',
             oldPrice: '35.000.000',
@@ -500,7 +500,7 @@ const BodyComponent = () => {
                         products.map((product) => 
                         <div className="col l-2-4 m-3 c-6 ">
                         <a className="home-product-item" href="/">
-                          <div className="home-product-item__img">{product.image}</div>
+                        <div className="home-product-item__img" style={{backgroundImage: `url(${product.image})`}}></div>
                           <h4 className="home-product-item__name">
                             {product.name}
                           </h4>
