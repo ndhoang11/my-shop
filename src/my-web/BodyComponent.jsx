@@ -1,58 +1,271 @@
 import React from 'react'
+import './styles/base.css'
+import './styles/main.css'
+import './styles/responsive.css'
+import './styles/grid.css'
+
+
 
 const BodyComponent = () => {
-    const products = [
-        {
-            image:  'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-            name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-            price: '28.000.000',
-            oldPrice: '35.000.000',
-            favorite: true,
-            produce: 'Korea'
-        },
-        {
-          image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-          name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-          price: '28.000.000',
-          oldPrice: '35.000.000',
-          favorite: true,
-          produce: 'Korea'
-      },
-      {
-        image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-        name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-        price: '28.000.000',
-        oldPrice: '35.000.000',
-        favorite: true,
-        produce: 'Korea'
+  const titles = [
+    {
+      titleIp: 'iPhone VN/A Chính Thống'
     },
     {
-      image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-      name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-      price: '28.000.000',
-      oldPrice: '35.000.000',
+      titleSS: 'Samsung Chính Hãng'
+    },
+  ]
+    const products = [
+      {
+          image:  'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
+          name: ' iPhone 14 Pro Max 128GB Chính hãng (VN/A)  ',
+          price: '25.790.000',
+          oldPrice: '33.990.000đ ',
+          favorite: true,
+          produce: 'Korea',
+          nameDiscount: 'Discount',
+          DiscountPercent: '10%',
+          brand: 'Ustora',
+          title: 'iPhone VN/A Chính Thống'
+      },
+      {
+        image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-13-128gb-didongviet_1.jpg&w=640&q=100',
+        name: ' iPhone 13 128GB Chính Hãng (VN/A)  ',
+        price: '23.790.000',
+        oldPrice: '33.990.000đ ',
+        favorite: true,
+        produce: 'Korea',
+        nameDiscount: 'Discount',
+        DiscountPercent: '10%',
+        brand: 'Ustora',
+
+    },
+    {
+      image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-13-pro-128gb-didongviet_1.jpg&w=640&q=100',
+      name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)  ',
+      price: '25.790.000',
+      oldPrice: '33.990.000đ ',
       favorite: true,
-      produce: 'Korea'
+      produce: 'Korea',
+      nameDiscount: 'Discount',
+      DiscountPercent: '10%',
+      brand: 'Ustora'
+
   },
   {
-    image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-    name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-    price: '28.000.000',
-    oldPrice: '35.000.000',
+    image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-14-plus-128gb-didongviet_1.jpg&w=1920&q=80',
+    name: ' iPhone 12 64GB (Likenew)  ',
+    price: '9.990.000',
+    oldPrice: '11.990.000đ ',
     favorite: true,
-    produce: 'Korea'
+    produce: 'Korea',
+    nameDiscount: 'Discount',
+    DiscountPercent: '10%',
+    brand: 'Ustora'
+
 },
 {
-  image: 'https://cdn-v2.didongviet.vn/files/media/catalog/product/i/p/iphone-13-pro-max-128gb-didongviet_5.jpg',
-  name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
-  price: '28.000.000',
-  oldPrice: '35.000.000',
+  image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-11-64gb-chinh-hang_3.jpg&w=640&q=100',
+  name: ' iPhone 11 64GB Chính Hãng (VN/A)   ',
+  price: '9.990.000',
+   oldPrice: '11.990.000đ ',
   favorite: true,
-  produce: 'Korea'
+  produce: 'Korea',
+  nameDiscount: 'Discount',
+  DiscountPercent: '10%',
+  brand: 'Ustora'
+
 },
+{
+image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-13-pro-256gb-didongviet_1.jpg&w=640&q=100',
+name: ' iPhone 14 Pro 128GB Chính hãng (VN/A)   ',
+price: '9.990.000',
+oldPrice: '11.990.000đ ',
+favorite: true,
+produce: 'Korea',
+nameDiscount: 'Discount',
+DiscountPercent: '10%',
+brand: 'Ustora'
+
+},
+{
+image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-14-plus-128gb-didongviet_1.jpg&w=1920&q=80',
+name: 'iPhone 14 Plus 256GB Chính Hãng (VN/A)   ',
+price: '9.990.000',
+oldPrice: '11.990.000đ ',
+favorite: true,
+produce: 'Korea',
+nameDiscount: 'Discount',
+DiscountPercent: '10%',
+brand: 'Ustora'
+
+},
+{
+image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-13-pro-128gb-didongviet_1.jpg&w=1920&q=80',
+name: ' iPhone 14 Pro 128GB Chính hãng (VN/A) ',
+price: '9.990.000',
+ oldPrice: '11.990.000đ ',
+favorite: true,
+produce: 'Korea',
+nameDiscount: 'Discount',
+DiscountPercent: '10%',
+brand: 'Ustora'
+
+},
+{
+image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F4%2F3%2F1%2F1683095228018_iphone_12_pro_max_den_didongviet.jpg&w=1920&q=80',
+name: ' iPhone 12 Pro 128GB (Likenew)   ',
+price: '212.990.000 ',
+oldPrice: '15.990.000 ',
+favorite: true,
+produce: 'Korea',
+nameDiscount: 'Discount',
+DiscountPercent: '10%',
+brand: 'Ustora'
+
+},
+{
+image: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone-12-mau-green-didongviet_2.jpg&w=640&q=100',
+name: ' iPhone 12 64GB (Likenew)   ',
+price: '9.990.0000',
+oldPrice: '11.990.000 ',
+favorite: true,
+produce: 'Korea',
+nameDiscount: 'Discount',
+DiscountPercent: '10%',
+brand: 'Ustora'
+
+},
+
+  ]
+
+  const productSs = [
+ 
+{
+  imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamsung-galaxy-z-flip4-5g-128gb-didongviet_1_1_1.jpg&w=1920&q=80',
+  nameSS: ' Samsung Galaxy Z Flip4 5G 128GB Chính Hãng (BHĐT)  ',
+  priceSS: '14.090.000 ',
+  oldPriceSS: '23.990.000  ',
+  favoriteSS: true,
+  produceSS: 'Korea',
+  nameDiscountSS: 'Discount',
+  DiscountPercentSS: '10%',
+  brandSS: 'Ustora'
+  
+  },
+ { 
+  imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamsung-galaxy-s23-mau-den-1-didongviet.jpg&w=1920&q=80',
+  nameSS: ' Samsung Galaxy S23 5G 256GB Chính Hãng  ',
+  priceSS: '16.790.000',
+  oldPriceSS: '24.990.000  ',
+  favoriteSS: true,
+  produceSS: 'Korea',
+  nameDiscountSS: 'Discount',
+  DiscountPercentSS: '10%',
+  brandSS: 'Ustora'
+  
+  },
+ { 
+  imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamsung-galaxy-s23-mau-tim-1-didongviet_2.jpg&w=1920&q=80',
+  nameSS: 'Samsung Galaxy S23 Plus 5G 512GB Chính Hãng  ',
+  priceSS: '20.590.000',
+  oldPriceSS: '29.990.000 ',
+  favoriteSS: true,
+  produceSS: 'Korea',
+  nameDiscountSS: 'Discount',
+  DiscountPercentSS: '10%',
+  brandSS: 'Ustora'
+  
+  },
+  { 
+    imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F4%2F31%2F1%2F1685524109619_samsung_galaxy_s23_ultra_thumb_didongviet_new.jpg&w=1920&q=80',
+    nameSS: 'Samsung Galaxy S23 Ultra 5G 512GB Chính Hãng ',
+    priceSS: '30.880.000 ',
+    oldPriceSS: '36.990.000 ',
+    favoriteSS: true,
+    produceSS: 'Korea',
+    nameDiscountSS: 'Discount',
+    DiscountPercentSS: '10%',
+    brandSS: 'Ustora'
+    
+    },
+    { 
+      imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamsung-galaxy-z-fold4-5g-256gb-didongviet.jpg&w=1920&q=80',
+      nameSS: 'Samsung Galaxy Z Fold4 5G 256GB Chính Hãng ',
+      priceSS: '28.990.000 ',
+      oldPriceSS: '40.990.000',
+      favoriteSS: true,
+      produceSS: 'Korea',
+      nameDiscountSS: 'Discount',
+      DiscountPercentSS: '10%',
+      brandSS: 'Ustora'
+      
+      },
+      { 
+        imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F4%2F21%2F1%2F1684604344478_samsung_galaxy_a04_mau_den_didongviet_1.jpg&w=1920&q=80',
+        nameSS: 'Samsung Galaxy A04 32GB Chính Hãng (BHĐT)',
+        priceSS: '2.090.000',
+        oldPriceSS: '2.990.000',
+        favoriteSS: true,
+        produceSS: 'Korea',
+        nameDiscountSS: 'Discount',
+        DiscountPercentSS: '10%',
+        brandSS: 'Ustora'
+        
+        },
+        { 
+          imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F4%2F21%2F1%2F1684604027620_samsung_galaxy_a04s_mau_xanh_duong_si_didongviet_1.jpg&w=1920&q=80',
+          nameSS: 'Samsung Galaxy A04s 64GB Chính Hãng (BHĐT)',
+          priceSS: '2.890.000',
+          oldPriceSS: '3.990.000 ',
+          favoriteSS: true,
+          produceSS: 'Korea',
+          nameDiscountSS: 'Discount',
+          DiscountPercentSS: '10%',
+          brandSS: 'Ustora'
+          
+          },
+          { 
+            imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F4%2F15%2F1%2F1684132626296_samsung_galaxy_a14_128gb_mau_den_didongviet_1_1.jpg&w=1920&q=80',
+            nameSS: 'Samsung Galaxy A14 128GB Chính Hãng (BHĐT)',
+            priceSS: '3.290.000 ',
+            oldPriceSS: '4.290.000 ',
+            favoriteSS: true,
+            produceSS: 'Korea',
+            nameDiscountSS: 'Discount',
+            DiscountPercentSS: '10%',
+            brandSS: 'Ustora'
+            
+            },
+            { 
+              imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F5%2F9%2F1%2F1686296072076_samsung_galaxy_a34_128gb_xanh_dao_didongviet_1.jpg&w=1920&q=80',
+              nameSS: 'Samsung Galaxy A34 5G 128GB Chính Hãng (BHĐT)',
+              priceSS: '6.790.000 ',
+              oldPriceSS: '8.490.000 ',
+              favoriteSS: true,
+              produceSS: 'Korea',
+              nameDiscountSS: 'Discount',
+              DiscountPercentSS: '10%',
+              brandSS: 'Ustora'
+              
+              },
+              { 
+                imageSS: 'https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fproducts%2F2023%2F5%2F9%2F1%2F1686299517983_samsung_galaxy_a54_128gb_den_didongviet.jpg&w=1920&q=80',
+                nameSS: 'Samsung Galaxy A54 5G 256GB Chính Hãng (BHĐT)',
+                priceSS: '8.790.000 ',
+                oldPriceSS: '11.290.000 ',
+                favoriteSS: true,
+                produceSS: 'Korea',
+                nameDiscountSS: 'Discount',
+                DiscountPercentSS: '10%',
+                brandSS: 'Ustora'
+                
+                },
+  ]
+   
         
         
-    ]
+    
   return (
     <div>
         <div className="app">
@@ -493,7 +706,9 @@ const BodyComponent = () => {
                   </nav>
                   <div className="home-product">
                     <div className="title">
-                      <a href className="title__text">Điện thoại</a>
+                    {titles.map((titleProduct) => 
+                      <a href className="title__product">{titleProduct.titleIp}</a>
+                    )}
                     </div>
                     <div className="row sm-gutter">
                     {
@@ -522,7 +737,7 @@ const BodyComponent = () => {
                             </div>
                           </div>
                           <div className="home-product-item__origin">
-                            <span className="home-product-item__brand">{product.produce}</span>
+                            <span className="home-product-item__brand">{product.brand}</span>
                             <span className="home-product-item__origin-name">{product.produce}</span>
                           </div>
                           <div className="home-product-item__favourite">
@@ -530,8 +745,58 @@ const BodyComponent = () => {
                             <span>Favourite</span>
                           </div>
                           <div className="home-product-item__sale-off">
-                            <span className="home-product-item__sale-off-persent">{product.discount}</span>
-                            <span className="home-product-item__sale-off-label">Discount</span>
+                            <span className="home-product-item__sale-off-persent">{product.nameDiscount}</span>
+                            <span className="home-product-item__sale-off-label">{product.DiscountPercent}</span>
+                          </div>
+                        </a>  
+                      </div>)
+                    }           
+                      
+                    </div>
+                  </div>
+                  <div className="home-product">
+                    <div className="title">
+                    {titles.map((titleProduct) => 
+                      <a href className="title__product">{titleProduct.titleSS}</a>
+                    )}
+                    </div>
+                    <div className="row sm-gutter">
+                    {
+                        productSs.map((productSS) => 
+                        <div className="col l-2-4 m-3 c-6 ">
+                        <a className="home-product-item" href="/">
+                        <div className="home-product-item__img" style={{backgroundImage: `url(${productSS.imageSS})`}}></div>
+                          <h4 className="home-product-item__name">
+                            {productSS.nameSS}
+                          </h4>
+                          <div className="home-product-item__price">
+                            <span className="home-product-item__price-old">{productSS.oldPriceSS}</span>
+                            <span className="home-product-item__price-curent">{productSS.priceSS}đ</span>
+                          </div>
+                          <div className="home-product-item__action">
+                            <span className="home-product-item__like">
+                              <i className="fa-solid fa-heart" />
+                              {/* <i class="fa-solid fa-heart"></i> */}
+                            </span>
+                            <div className="home-product-item__rating">
+                              <i className="fa-sharp fa-solid fa-star" />
+                              <i className="fa-sharp fa-solid fa-star" />
+                              <i className="fa-sharp fa-solid fa-star" />
+                              <i className="fa-sharp fa-solid fa-star" />
+                              <i className="fa-sharp fa-solid fa-star" />
+                            </div>
+                          </div>
+                          <div className="home-product-item__origin">
+                            <span className="home-product-item__brand">{productSS.brandSS}</span>
+                            <span className="home-product-item__origin-name">{productSS.produceSS}</span>
+                          </div>
+                          <div className="home-product-item__favourite">
+                            <i className="fa-solid fa-check" />
+                            <span>Favourite</span>
+                          </div>
+                          <div className="home-product-item__sale-off">
+                            <span className="home-product-item__sale-off-persent">{productSS.nameDiscountSS}</span>
+                            <span className="home-product-item__sale-off-label">{productSS.DiscountPercentSS}</span>
                           </div>
                         </a>  
                       </div>)
@@ -635,7 +900,7 @@ const BodyComponent = () => {
               <div className="col l-2-4 m-4 c-6">
                 <h3 className="footer__heading"> VÀO CỬA HÀNG TRÊN ỨNG DỤNG </h3>
                 <div className="footer__download">
-                  <img src="assets/img/maQR.png" alt="" className="footer__download-QR" />
+                  <img src="hhttps://quantrinhahang.edu.vn/wp-content/uploads/2019/07/qr-code-la-gi.jpg" alt="" className="footer__download-QR" />
                   <div className="footer__download-apps">
                     <a href="https://play.google.com/" className="footer__download-apps-img-link">
                       <img src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Logo.wine.svg" alt="" className="footer__download-apps-img" />
@@ -674,7 +939,7 @@ const BodyComponent = () => {
               </ul>
             </div>
             <div className="footer-logo">
-              <img src="assets/img/logo.png" alt="" className="footer-logo__img" />
+              <img src="https://freshdesignweb.com/demo/template/ustora/img/logo.png" alt="" className="footer-logo__img" />
               <p className="description-logo">Công ty TNHH Ustora</p>
             </div>
             <div className="footer__addrest">

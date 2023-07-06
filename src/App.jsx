@@ -1,12 +1,12 @@
 
 // import "./App.css";
-import BodyComponent from "./BodyComponent";
+import BodyComponent from "./my-web/BodyComponent";
 // import Toggle from "./State/Toggle";
 // import YoutubeList from "./components/Youtube/YoutubeList";
-import './styles/base.css' 
-import './styles/grid.css' 
-import './styles/main.css' 
-import './styles/responsive.css' 
+import './my-web/styles/responsive.css' 
+import './my-web/styles/base.css'
+import './my-web/styles/grid.css'
+import './my-web/styles/main.css'
 
 function App() {
   // const Name = "Duy Hoang"
