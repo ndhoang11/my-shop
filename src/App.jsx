@@ -14,9 +14,6 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [searchText, setSearchText] = useState('');
-
-  
-
   return (
     <div>
       <Header setSearchText={setSearchText} searchText={searchText} />

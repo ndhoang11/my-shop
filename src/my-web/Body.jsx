@@ -6,9 +6,11 @@ import './styles/grid.css';
 import { samSungProducts } from '../data/samSungProducts';
 import { iphoneProducts } from '../data/iphoneProducts';
 import { titles } from '../data/titles';
+import { OppoProducts } from '../data/oppoProducts';
 const Body = (props) => {
-  const searchText = props.searchText;
 
+  // iphone
+  const searchText = props.searchText;
   const listIphoneProducts = useMemo(() => {
     // kiem tra searchText co gia tri hay ko
     if (!searchText.trim()?.length) return iphoneProducts;
@@ -21,11 +23,26 @@ const Body = (props) => {
     return newProductList;
   }, [searchText]);
 
+  // Samsung
   const listSamsungProducts = useMemo(() => {
     // kiem tra searchText co gia tri hay ko
     if (!searchText.trim()?.length) return samSungProducts;
   
     const newProductList = samSungProducts.filter((product) => {
+      const regex = new RegExp(searchText, 'ig');
+      const matched = regex.test(product.name);
+      return matched;
+    });
+
+    return newProductList;
+  }, [searchText]);
+
+  // Oppo
+  const listOppoProducts = useMemo(() => {
+    // kiem tra searchText co gia tri hay ko
+    if (!searchText.trim()?.length) return OppoProducts;
+  
+    const newProductList = OppoProducts.filter((product) => {
       const regex = new RegExp(searchText, 'ig');
       const matched = regex.test(product.name);
       return matched;
@@ -289,6 +306,8 @@ const Body = (props) => {
                   </li>
                 </ul>
               </nav>
+
+              {/* iphone */}
               <div className='home-product'>
                 <div className='title'>
                   {titles.map((titleProduct) => (
@@ -353,6 +372,7 @@ const Body = (props) => {
                     </div>
                   ))}
                 </div>
+                {/* samsung */}
               </div>
               <div className='home-product'>
                 <div className='title'>
@@ -363,24 +383,24 @@ const Body = (props) => {
                   ))}
                 </div>
                 <div className='row sm-gutter'>
-                  {listSamsungProducts.map((productSS) => (
+                  {listSamsungProducts.map((product) => (
                     <div className='col l-2-4 m-3 c-6 '>
                       <a className='home-product-item' href='/'>
                         <div
                           className='home-product-item__img'
                           style={{
-                            backgroundImage: `url(${productSS.image})`,
+                            backgroundImage: `url(${product.image})`,
                           }}
                         ></div>
                         <h4 className='home-product-item__name'>
-                          {productSS.name}
+                          {product.name}
                         </h4>
                         <div className='home-product-item__price'>
                           <span className='home-product-item__price-old'>
-                            {productSS.oldPrice}
+                            {product.oldPrice}
                           </span>
                           <span className='home-product-item__price-curent'>
-                            {productSS.price}đ
+                            {product.price}đ
                           </span>
                         </div>
                         <div className='home-product-item__action'>
@@ -398,10 +418,10 @@ const Body = (props) => {
                         </div>
                         <div className='home-product-item__origin'>
                           <span className='home-product-item__brand'>
-                            {productSS.brand}
+                            {product.brand}
                           </span>
                           <span className='home-product-item__origin-name'>
-                            {productSS.produce}
+                            {product.produce}
                           </span>
                         </div>
                         <div className='home-product-item__favourite'>
@@ -410,10 +430,78 @@ const Body = (props) => {
                         </div>
                         <div className='home-product-item__sale-off'>
                           <span className='home-product-item__sale-off-persent'>
-                            {productSS.nameDisount}
+                            {product.nameDisount}
                           </span>
                           <span className='home-product-item__sale-off-label'>
-                            {productSS.discountPercent}
+                            {product.discountPercent}
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {/* oppo */}
+              <div className='home-product'>
+                <div className='title'>
+                  {titles.map((titleProduct) => (
+                    <a href className='title__product'>
+                      {titleProduct.titleOppo}
+                    </a>
+                  ))}
+                </div>
+                <div className='row sm-gutter'>
+                  {listOppoProducts.map((product) => (
+                    <div className='col l-2-4 m-3 c-6 '>
+                      <a className='home-product-item' href='/'>
+                        <div
+                          className='home-product-item__img'
+                          style={{
+                            backgroundImage: `url(${product.image})`,
+                          }}
+                        ></div>
+                        <h4 className='home-product-item__name'>
+                          {product.name}
+                        </h4>
+                        <div className='home-product-item__price'>
+                          <span className='home-product-item__price-old'>
+                            {product.oldPrice}
+                          </span>
+                          <span className='home-product-item__price-curent'>
+                            {product.price}đ
+                          </span>
+                        </div>
+                        <div className='home-product-item__action'>
+                          <span className='home-product-item__like'>
+                            <i className='fa-solid fa-heart' />
+                            {/* <i class="fa-solid fa-heart"></i> */}
+                          </span>
+                          <div className='home-product-item__rating'>
+                            <i className='fa-sharp fa-solid fa-star' />
+                            <i className='fa-sharp fa-solid fa-star' />
+                            <i className='fa-sharp fa-solid fa-star' />
+                            <i className='fa-sharp fa-solid fa-star' />
+                            <i className='fa-sharp fa-solid fa-star' />
+                          </div>
+                        </div>
+                        <div className='home-product-item__origin'>
+                          <span className='home-product-item__brand'>
+                            {product.brand}
+                          </span>
+                          <span className='home-product-item__origin-name'>
+                            {product.produce}
+                          </span>
+                        </div>
+                        <div className='home-product-item__favourite'>
+                          <i className='fa-solid fa-check' />
+                          <span>Favourite</span>
+                        </div>
+                        <div className='home-product-item__sale-off'>
+                          <span className='home-product-item__sale-off-persent'>
+                            {product.nameDisount}
+                          </span>
+                          <span className='home-product-item__sale-off-label'>
+                            {product.discountPercent}
                           </span>
                         </div>
                       </a>

@@ -18,9 +18,21 @@
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
+    transition: transform linear 0.2s;
     
 }
 
 .spinner.active {
     transform: translateX(40px);
+}
+.toggle-control {
+    display: flex;
+    margin-left: 40px;
+}
+.toggle-on {
+    font-size: 16px;
+    padding-right: 10px;
+}
+.toggle-off {
+    font-size: 16px;
 }

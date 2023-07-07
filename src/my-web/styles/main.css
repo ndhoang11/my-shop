@@ -358,6 +358,7 @@ display: flex;}
 
 .nav__mobile-list {
     margin-top: 34px;
+    list-style: none;
 }
 
 .nav__mobile-item {
@@ -492,6 +493,9 @@ display: flex;}
     border-radius: 0.5rem;
     -webkit-tap-highlight-color: transparent;
    cursor: pointer;
+}
+.header__menu-mobile-link i {
+    padding-right: 10px;
 }
 
 .header__menu-mobile-link:hover {

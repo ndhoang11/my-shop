@@ -67,7 +67,7 @@ const Footer = () => {
               <div className="col l-2-4 m-4 c-6">
                 <h3 className="footer__heading"> VÀO CỬA HÀNG TRÊN ỨNG DỤNG </h3>
                 <div className="footer__download">
-                  <img src="hhttps://quantrinhahang.edu.vn/wp-content/uploads/2019/07/qr-code-la-gi.jpg" alt="" className="footer__download-QR" />
+                  <img src='https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSh-wrQu254qFaRcoYktJ5QmUhmuUedlbeMaQeaozAVD4lh4ICsGdBNubZ8UlMvWjKC' alt="" className="footer__download-QR" />
                   <div className="footer__download-apps">
                     <a href="https://play.google.com/" className="footer__download-apps-img-link">
                       <img src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Logo.wine.svg" alt="" className="footer__download-apps-img" />

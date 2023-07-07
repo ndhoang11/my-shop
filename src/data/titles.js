@@ -5,5 +5,8 @@ export const titles = [
     {
       titleSS: 'Samsung Chính Hãng',
     },
+    {
+      titleOppo: 'Oppo'
+    }
   ];
   
