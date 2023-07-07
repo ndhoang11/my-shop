@@ -72,7 +72,8 @@ html {
     left: 0;
     display: flex;
    z-index: 999;
-   display:none;
+   /* display:none; */
+
 }
 
 .modal__overlay {
@@ -91,17 +92,24 @@ html {
     position: relative;
     margin: auto;
     background-color: var(--white-color);
-    z-index: 9;
-    
-    
+
 }
-.visible {
-    /* display: block; */
-    visibility: visible;
-    opacity: 1;
-    animation: fade .5s;
-    pointer-events: all;
+
+.close-auth {
+    display: block;
+    margin: -10px 10px 0 0;
+    float: right;
+    cursor: pointer;
 }
+
+.close-auth:hover {
+    opacity: 0.8;
+}
+
+.close-auth i {
+    font-size: 2.3rem;
+}
+
 /* button style */
 
 .btn {

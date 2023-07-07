@@ -1,8 +1,4 @@
 import React from 'react';
-import './styles/base.css'
-import './styles/main.css'
-import './styles/responsive.css'
-import './styles/grid.css'
 const Footer = () => {
     return (
         <div>

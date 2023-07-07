@@ -170,12 +170,22 @@ display: flex;}
     text-align: center;
 }
 
-/* authen form */
+/* auth form */
 
-.auth-form {
+.auth-form-register {
     width: 500px;
+    /* display: none; */
     
 } 
+
+.auth-form-login {
+    width: 500px;
+    /* display: none; */
+}
+
+.auth-form.active {
+    display: flex;
+}
 
 .auth-form__container {
      padding: 0 32px;
@@ -185,7 +195,7 @@ display: flex;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px;
+    margin: 16px 0  12px;
 }
 
 .auth-form__heading {

@@ -1,8 +1,4 @@
 import React, { useMemo } from 'react';
-import './styles/base.css';
-import './styles/main.css';
-import './styles/responsive.css';
-import './styles/grid.css';
 import { samSungProducts } from '../data/samSungProducts';
 import { iphoneProducts } from '../data/iphoneProducts';
 import { titles } from '../data/titles';
