@@ -72,8 +72,6 @@ html {
     left: 0;
     display: flex;
    z-index: 999;
-   /* display:none; */
-
 }
 
 .modal__overlay {
@@ -92,9 +90,10 @@ html {
     position: relative;
     margin: auto;
     background-color: var(--white-color);
-
+    z-index: 9;
+    
+    
 }
-
 .close-auth {
     display: block;
     margin: -10px 10px 0 0;
@@ -109,7 +108,6 @@ html {
 .close-auth i {
     font-size: 2.3rem;
 }
-
 /* button style */
 
 .btn {
@@ -120,7 +118,7 @@ html {
     border-radius: 2px;
     cursor: pointer;
     font-size: 1.2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +180,6 @@ html {
     line-height: var(--height);
     text-align: center;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 

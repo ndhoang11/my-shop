@@ -137,6 +137,16 @@
             top: var(--header-height);
         }
     }
+    .auth-form-register {
+        width: 100%;
+        /* display: none; */
+        
+    } 
+    
+    .auth-form-login {
+        width: 100%;
+        /* display: none; */
+    }
    
 }
 

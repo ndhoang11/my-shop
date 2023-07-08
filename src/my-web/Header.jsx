@@ -5,8 +5,8 @@ const Header = (props) => {
     <div>
       <header className='header'>
         <div className='grid wide'>
-          <nav className='header__navbar hide-on-mobile-tablet '>
-            <ul className='header__navbar--list'>
+          <nav className='header__navbar '>
+            <ul className='header__navbar--list hide-on-mobile-tablet'>
               <li className='header__navbar--item   '>
                 <a href className='header__navbar--item-link  '>
                   {' '}
@@ -35,7 +35,7 @@ const Header = (props) => {
                 </a>
               </li>
             </ul>
-            <ul className='header__navbar--list'>
+            <ul className='header__navbar--list hide-on-mobile-tablet'>
               <li className='header__navbar--item header__navbar--item--open-notify '>
                 <a href className='header__navbar--item-link'>
                   <i className='header__navbar--icon fa-solid fa-bell' />

@@ -172,11 +172,11 @@ const Body = (props) => {
                   </li>
                 </ul>
               </div>
-              <div className='slider  hide-on-mobile-tablet'>
+              <div className='slider hide-on-mobile-tablet '>
                 <img
                   src='https://cdn-v2.didongviet.vn/files/banners/2023/5/16/1/1686900133618_aaaaac_quyaaan_maay_caa_824x400.jpg'
                   alt=''
-                  className='slider-img'
+                  className='slider-img '
                 />
               </div>
             </div>
