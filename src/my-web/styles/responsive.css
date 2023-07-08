@@ -147,12 +147,10 @@
     }
     .auth-form-register {
         width: 100%;
-        /* height: 100%; */
     } 
     
     .auth-form-login {
         width: 100%;
-        /* height: 100%; */
     }
     .auth-form__socials-title {
         margin: 0 10px;
