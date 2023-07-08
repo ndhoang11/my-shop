@@ -61,6 +61,7 @@
        
     }
     
+    
 }
 
 /* mobile */
@@ -104,6 +105,13 @@
     .header__cart {
         width: unset;
     }
+    .header__cart-text{
+        font-size: 14px;
+    }
+    .header__cart-content {
+        width: 240px;
+        height: 80px;
+    }
     .header__search-input {
         font-size: 1.2rem;
     }
@@ -139,14 +147,30 @@
     }
     .auth-form-register {
         width: 100%;
-        /* display: none; */
-        
+        /* height: 100%; */
     } 
     
     .auth-form-login {
         width: 100%;
-        /* display: none; */
+        /* height: 100%; */
     }
+    .auth-form__socials-title {
+        margin: 0 10px;
+    }
+    .auth-form__socials {
+        padding: 12px 30px;
+    }
+    .auth-form__socials--facebook {
+    
+        margin-right: 4px;
+    }
+    
+    .auth-form__socials--google {
+     
+        margin-left: 4px;
+    }
+  
+
    
 }
 
