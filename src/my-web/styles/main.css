@@ -275,7 +275,7 @@ display: flex;}
     justify-content: space-between;
 }
 
-.btn.btn--icon {
+.btn.btn--icon {    
     height: 30px;
     font-size: 12px;
 }
@@ -1123,6 +1123,7 @@ display: flex;}
     color: #b8bbc1;
     padding: 10px 0;
     display: block;
+    cursor: pointer;
 }
 
 .footer-item__link:hover {
@@ -1193,6 +1194,7 @@ display: flex;}
     color: #b8bbc1 ;
     font-size: 1.6rem;
     padding: 0 24px;
+    cursor: pointer;
 
 }
 
@@ -1201,6 +1203,7 @@ display: flex;}
     color: #b8bbc1 ;
     font-size: 1.6rem;
     padding: 0 24px;
+    cursor: pointer;
 }
 .footer__policies-item-link-no-boder:hover,
 .footer__policies-item-link:hover {
