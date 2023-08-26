@@ -288,7 +288,7 @@ display: flex;}
 .auth-form__socials--facebook {
     color: #fff;
     background-color: #3A5A98;
-    
+    margin-right: 4px;
 }
 
 .auth-form__socials--google {
